@@ -19,9 +19,7 @@ class SurveyList extends Component {
             </p>
           </div>
           <div className="card-action">
-            {/* eslint-disable-next-line */}
             <a>Yes: {survey.yes}</a>
-            {/* eslint-disable-next-line */}
             <a>No: {survey.no}</a>
           </div>
         </div>
