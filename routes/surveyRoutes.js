@@ -27,9 +27,11 @@ module.exports = (app) => {
 
     _.chain(req.body)
       .map(({ email, url }) => {
-        const match = p.test(new URL(url).pathname)
-        if (match) {
-          return { email, surveyId: match.surveyId, choice: match.choice }
+        if (url) {
+          const match = p.test(new URL(url).pathname)
+          if (match) {
+            return { email, surveyId: match.surveyId, choice: match.choice }
+          }
         }
       })
       .compact()
