@@ -6,9 +6,9 @@ class SurveyList extends Component {
   componentDidMount() {
     this.props.fetchSurveys()
   }
-
+  
   render() {
-    if (!this.props.surveys) return null
+    if (this.props.surveys.length === 0) return null
     return (
       this.props.surveys.reverse().map((survey) => {
         return (
