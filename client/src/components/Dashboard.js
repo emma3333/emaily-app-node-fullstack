@@ -11,7 +11,7 @@ const Dashboard = () => {
             to="/surveys/new"
             className="btn-floating btn-large red white-text"
           >
-            <i className="material-icons accent-1">add</i>
+            <i className="material-icons blue-grey">add</i>
           </Link>
         </div>
       </div>
